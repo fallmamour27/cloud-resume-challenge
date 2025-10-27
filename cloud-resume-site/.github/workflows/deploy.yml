@@ -23,4 +23,3 @@ jobs:
       - name: Deploy website to S3
         run: |
           aws s3 sync website/ s3://mamourcloudresume --delete --exclude ".git/*" --exclude ".github/*" --exclude "terraform/*"
-
